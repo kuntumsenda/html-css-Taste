@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: verdana;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    -webkit-filter: drop-shadow(5px 5px 20px #aaaaaa );
+    filter: drop-shadow(5px 5px 20px #aaaaaa);
+}
+
+p{
+    font-size: 16px;
+    color: black;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.infoBanner button:hover, .footerFlex button:hover{
+    background-color: rgb(70, 68, 68);
+}
+
+.container{
+    padding: 60px 100px;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 60%;
+}
+
+.infoBanner > h1{
+    margin-top: 70px;
+}
+
+.infoBanner > a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+}
+
+.infoBanner > button {
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 20px 20px 0 20px;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.fa-long-arrow-alt-right{
+    padding-left: 40px;
+}
+
+.imgBanner img{
+    width: 100%;
+}
+
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.infoProduk{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.produk{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.produk1{
+    margin-right: 15px;
+    background-color: #fff;
+    border-radius: 150px;
+    margin-top: 0px;
+    text-align: center;
+    box-shadow: 5px 5px 20px #aaaaaa;
+    max-height: fit-content;
+}
+
+.produk2{
+    margin-left: 15px;
+    background-color: #fff;
+    border-radius: 150px;
+    margin-top: 0px;
+    text-align: center;
+    box-shadow: 5px 5px 20px #aaaaaa;
+    max-height: fit-content;
+}
+
+.produk1 p, .produk2 p{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.produk h4{
+    font-weight: lighter;
+}
+
+.produk button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 20px;
+}
+
+.imgProduk1{
+    position: relative;
+    top: -50px;
+}
+
+.imgProduk2{
+    position: relative;
+    top: -50px;
+    left: 0px
+}
+
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.infoSection3{
+    margin-top: 100px;
+}
+
+.imgSection3 img{
+    width: 100%;
+}
+
+.imgSection3{
+    margin-left: 100px;
+}
+
+.sectionFooter{
+    margin-top: 100px;
+}
+
+.footerFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.logoFooter{
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.btnContact{
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 0 20px 20px 20px;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.logoFooter, .service, .company{
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 1050px) and (min-width: 900px){
+    .infoProduk{
+        margin-top: 0;
+        margin-left: 70px;
+    }   
+}
+
+@media screen and (max-width: 900px){
+    .infoBanner > button{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .section2{
+        display: block;
+        /* margin-top: 100px; */
+    }
+    .infoProduk{
+        margin-left: 0;
+    } 
+    
+    .infoSection3{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .produk1{
+        margin-right: 0;
+    }
+    .footer2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .logoFooter, .service, .company{
+        margin-right: 0px;
+    }
+
+    .imgSection3{
+        margin-left: 20px ;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .produk{
+        display: block;
+    }
+
+    .produk1, .produk2{
+        margin-top: 130px;
+    }
+
+    .imgBanner{
+        width: 90%;
+    }
+}
+    
